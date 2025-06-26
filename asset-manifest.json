@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/thesoulseedmarketing/static/css/main.78c6bfa4.css",
+    "main.js": "/thesoulseedmarketing/static/js/main.7bc9e457.js",
+    "static/media/about-background-image1.png": "/thesoulseedmarketing/static/media/about-background-image1.72b151615b3f52b248a8.png",
+    "static/media/Home-Banner-Image21bgrem.png": "/thesoulseedmarketing/static/media/Home-Banner-Image21bgrem.3698d34d2a8b6d3d2f44.png",
+    "static/media/company-logo.png": "/thesoulseedmarketing/static/media/company-logo.0a17817fdbd79ca7840f.png",
+    "static/media/testimonial2.jpeg": "/thesoulseedmarketing/static/media/testimonial2.98f8db84cf48885edd15.jpeg",
+    "static/media/testimonial1.jpeg": "/thesoulseedmarketing/static/media/testimonial1.d4467d2a5d7c99d941cb.jpeg",
+    "static/media/home-banner-background.png": "/thesoulseedmarketing/static/media/home-banner-background.585600da7ff85661555e.png",
+    "index.html": "/thesoulseedmarketing/index.html",
+    "main.78c6bfa4.css.map": "/thesoulseedmarketing/static/css/main.78c6bfa4.css.map",
+    "main.7bc9e457.js.map": "/thesoulseedmarketing/static/js/main.7bc9e457.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78c6bfa4.css",
+    "static/js/main.7bc9e457.js"
+  ]
+}
