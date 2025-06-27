@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.78c6bfa4.css",
-    "main.js": "/static/js/main.8201d41f.js",
+    "main.css": "/static/css/main.2d487150.css",
+    "main.js": "/static/js/main.092705d7.js",
     "static/media/about-background-image1.png": "/static/media/about-background-image1.72b151615b3f52b248a8.png",
     "static/media/Home-Banner-Image21bgrem.png": "/static/media/Home-Banner-Image21bgrem.3698d34d2a8b6d3d2f44.png",
     "static/media/company-logo.png": "/static/media/company-logo.0a17817fdbd79ca7840f.png",
     "static/media/testimonial2.jpeg": "/static/media/testimonial2.98f8db84cf48885edd15.jpeg",
+    "static/media/graphic-designing-image.png": "/static/media/graphic-designing-image.818c5ed40bb44388ea4e.png",
+    "static/media/influencer-marketing-image.png": "/static/media/influencer-marketing-image.c2a8e0d0087785596f90.png",
     "static/media/testimonial1.jpeg": "/static/media/testimonial1.d4467d2a5d7c99d941cb.jpeg",
+    "static/media/branding-image.png": "/static/media/branding-image.37fb81ed54b284de13cd.png",
+    "static/media/video-image.png": "/static/media/video-image.cc2adf9312520c1a4625.png",
+    "static/media/PR-image.png": "/static/media/PR-image.0989829d093aff63a1bf.png",
+    "static/media/social-Media-Marketing.png": "/static/media/social-Media-Marketing.934b4197ead88d1c8394.png",
     "static/media/home-banner-background.png": "/static/media/home-banner-background.585600da7ff85661555e.png",
     "index.html": "/index.html",
-    "main.78c6bfa4.css.map": "/static/css/main.78c6bfa4.css.map",
-    "main.8201d41f.js.map": "/static/js/main.8201d41f.js.map"
+    "main.2d487150.css.map": "/static/css/main.2d487150.css.map",
+    "main.092705d7.js.map": "/static/js/main.092705d7.js.map"
   },
   "entrypoints": [
-    "static/css/main.78c6bfa4.css",
-    "static/js/main.8201d41f.js"
+    "static/css/main.2d487150.css",
+    "static/js/main.092705d7.js"
   ]
 }
