@@ -4,6 +4,7 @@ import { BsTwitter } from "react-icons/bs";
 import { SiLinkedin } from "react-icons/si";
 import { BsYoutube } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
+import { FiMail } from "react-icons/fi";
 
 const Footer = () => {
   return (
@@ -22,24 +23,28 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-section-two">
-        <div className="footer-section-columns">
+        {/* <div className="footer-section-columns">
           <span>Qualtiy</span>
           <span>Help</span>
           <span>Share</span>
           <span>Carrers</span>
           <span>Testimonials</span>
           <span>Work</span>
-        </div>
+        </div> */}
         <div className="footer-section-columns">
-          <span>123-323-323</span>
-          <span>marketing@ad.com</span>
-          <span>press@food.com</span>
-          <span>contact@food.com</span>
-        </div>
-        <div className="footer-section-columns">
+          {/* <span>123-323-323</span> */}
+          <span><FiMail /> akshatsoni1047@gmail.com </span>
+          <span><BsInstagram /> soulseed.in</span>
+         
+          <span><SiLinkedin /> soulseed</span>
           <span>Terms & Conditions</span>
+          
           <span>Privacy Policy</span>
+          {/* <span>contact@food.com</span> */}
         </div>
+        {/* <div className="footer-section-columns">
+
+        </div> */}
       </div>
     </div>
   );

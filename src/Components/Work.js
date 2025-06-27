@@ -39,7 +39,7 @@ const Work = () => {
     },
     {
       image: InfluencerMarketingImage,
-      title: "Fast Deliveries",
+      title: "Influencer Marketing",
       text: "Quick turnaround for all your marketing projects. Get results faster and stay ahead of the competition.",
     },
   ];
