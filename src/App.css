@@ -440,18 +440,34 @@ nav:hover{
 .work-section-info h2 {
   margin: 1rem 0rem;
 }
-.work-section-bottom {
-  margin-top: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
+
 .work-section-info p {
   flex: 1;
   display: flex;
   align-items: center;
   font-weight: 600;
+}
+.work-section-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px; /* adjust as needed */
+  align-items: stretch;
+  justify-content: center; /* optional, for centering */
+}
+
+.work-section-info {
+  background: #fff; /* or your card background */
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 24px 16px;
+  flex: 1 1 250px; /* grow, shrink, basis */
+  min-width: 250px; /* adjust as needed */
+  max-width: 320px; /* optional, for max card width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 350px; /* adjust as needed for uniform height */
+  box-sizing: border-box;
 }
 
 @media (max-width: 1000px) {

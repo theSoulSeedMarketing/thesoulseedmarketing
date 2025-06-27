@@ -16,13 +16,23 @@ const Founder = () => {
         <p className="primary-heading">Meet The Founder</p>
  
         <p className="primary-text">
-          At SoulSeed Marketing, we’re not just another agency.
-We’re the bridge between intention and innovation, where mindful storytelling meets high-performing strategy.
-We plant seeds of meaning, nurture your brand’s energy, and grow content that connects, converts, and creates a legacy.
+          Akshat Soni is the chaos curator behind SoulSeed Marketing — dropping hot ideas, savage strategies, and main character vibes for brands that wanna slay. Big energy. Zero cringe. Wanna see who’s making brands go viral? Here’s the creative mind turning brands into everyone’s new fave.
         </p>
+
+        {/* <p className="primary-text">
+          Akshat Soni, founder of SoulSeed Marketing, has been rewriting the rules of branding for 6 years, 
+          taking big brands from ordinary to iconic with ideas that don’t just catch eyes but spark entire
+           movements. He’s here to flip the script on what marketing can be, blending
+            Gen Z energy with scroll-stopping creativity so brands don’t just exist, they trend. 
+            His motto? Go big, glow up, and create moments people can’t ignore. From crafting viral campaigns to 
+            building stories that vibe with audiences, Akshat makes sure your brand becomes the main character 
+            of every feed. Boring brands? Not on his watch. Let’s make your brand unforgettable, magnetic, and 
+            impossible to scroll past.
+        </p> */}        
         <p className="primary-text">
-          Non tincidunt magna non et elit. Dolor turpis molestie dui magnis
-          facilisis at fringilla quam.
+          Akshat makes sure your brand becomes the main character 
+          of every feed. Boring brands? Not on his watch. Let’s make your brand unforgettable, magnetic, and 
+          impossible to scroll past
         </p>
         <div className="about-buttons-container">
           {/* <button className="secondary-button">Learn More</button> */}

@@ -26,9 +26,9 @@ We plant seeds of meaning, nurture your brand’s energy, and grow content that 
         </p>
         <div className="about-buttons-container">
           {/* <button className="secondary-button">Learn More</button> */}
-          <button className="watch-video-button">
+          {/* <button className="watch-video-button">
             <BsFillPlayCircleFill /> Watch Video
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
