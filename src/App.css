@@ -13,10 +13,11 @@ img {
 }
 .App {
   min-height: 100vh;
-  width: 85vw;
-  /* width:100%; */
-  max-width: 1900px;
-  margin: 0rem auto;
+  width: 100%;
+  max-width: 1200px;  /* or 1000px, adjust based on design */
+  margin: 0 auto;
+  padding: 0 1rem;    /* Optional: Adds breathing room on sides */
+  box-sizing: border-box;
 }
 body {
   max-width: 100%;
@@ -482,6 +483,16 @@ nav:hover{
     max-width: 600px;
   }
 }
+@media (max-width: 900px) {
+  .navbar-links-container {
+    display: none !important;
+  }
+  .navbar-menu-container {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+}
 @media (max-width: 800px) {
   .nav-logo-container {
     width: 140px;
@@ -585,8 +596,37 @@ nav:hover{
   }
 }
 @media (max-width: 600px) {
+  
+    .home-banner-container{
+      padding-top: 1rem;
+    }
+    .home-container {
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
   .home-bannerImage-container,
   .about-background-image-container {
     display: none;
   }
+
+    .home-image-section{
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 2rem auto; /* Center the image */
+  }
+  .home-image-section img {
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 2rem auto; /* Center the image */
+  }
+
+
 }
+
