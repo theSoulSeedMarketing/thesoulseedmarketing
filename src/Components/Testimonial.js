@@ -8,23 +8,23 @@ const testimonialsData = [
   {
     name: "Pyra Vanasthali",
     feedback:
-      "Amazing service and top quality products. Will come back again!",
+      "!",
     image: testimonial1,
   },
   {
     name: "Poonam Sonwal",
     feedback:
-      "Bhot badiya Bhot badiya ab part de de Bhot badiya Bhot badiya ab part de deBhot badiya Bhot badiya ab part de deBhot badiya Bhot badiya ab part de deBhot badiya Bhot badiya ab part de de ",
-    image: testimonial2,
+      " ",
+    image: testimonial1,
   },
   {
     name: "Alex Johnson",
-    feedback: "maaja aagaya bhai .... kya hee mast kaam hua hai mast mast",
-    image: testimonial3,
+    feedback: "",
+    image: testimonial1,
   },
     {
     name: "Tanish Johnson",
-    feedback: "Bhaiii momos khaane chalo .... tasty wale",
+    feedback: "",
     image: testimonial3,
   }
 ];
