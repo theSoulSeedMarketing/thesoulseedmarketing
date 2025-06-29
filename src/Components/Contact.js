@@ -21,11 +21,12 @@ const Contact = () => {
         className="contact-form-container"
         action="https://api.web3forms.com/submit"
         method="POST"
+        
       >
         {/* Required Hidden Input for Web3Forms */}
         <input type="hidden" name="access_key" value="1967ee7b-7de8-423d-ae30-ed63cda11cf7" />
-        <input type="hidden" name="access_key" value="1967ee7b-7de8-423d-ae30-ed63cda11cf7" />
-        <input type="hidden" name="from_name" value="Mission Control"></input>
+        
+        
         <input
           type="text"
           name="name"

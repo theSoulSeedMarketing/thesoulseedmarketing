@@ -17,6 +17,8 @@ import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 
+import PortraitIcon from '@mui/icons-material/Portrait';
+
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
@@ -24,6 +26,7 @@ const Navbar = () => {
   { text: "About", icon: <InfoIcon />, href: "#about" },
   { text: "Testimonials", icon: <CommentRoundedIcon />, href: "#testimonials" },
   { text: "Contact", icon: <PhoneRoundedIcon />, href: "#contact" },
+  { text: "Founder", icon: <PortraitIcon />, href: "#founder" }
 ];
   return (
     <nav>

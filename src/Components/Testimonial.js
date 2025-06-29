@@ -8,24 +8,23 @@ const testimonialsData = [
   {
     name: "Pyra Vanasthali",
     feedback:
-      "!",
+      "The start has been really impressive — there’s both consistency and quality in the content. The reach has also been great. We feel the graphics could be made even stronger in terms of orientation and aesthetics, but overall, it’s been a fantastic experience so far!",
     image: testimonial1,
   },
   {
-    name: "Poonam Sonwal",
-    feedback:
-      " ",
+    name: "Pyra Vanasthali",
+    feedback: "The start has been really impressive — there’s both consistency and quality in the content. The reach has also been great. We feel the graphics could be made even stronger in terms of orientation and aesthetics, but overall, it’s been a fantastic experience so far!",
     image: testimonial1,
   },
   {
-    name: "Alex Johnson",
-    feedback: "",
+    name: "Pyra Vanasthali",
+    feedback: "The start has been really impressive — there’s both consistency and quality in the content. The reach has also been great. We feel the graphics could be made even stronger in terms of orientation and aesthetics, but overall, it’s been a fantastic experience so far!",
     image: testimonial1,
   },
     {
-    name: "Tanish Johnson",
-    feedback: "",
-    image: testimonial3,
+    name: "Pyra Vanasthali",
+    feedback: "The start has been really impressive — there’s both consistency and quality in the content. The reach has also been great. We feel the graphics could be made even stronger in terms of orientation and aesthetics, but overall, it’s been a fantastic experience so far!",
+    image: testimonial1,
   }
 ];
 
@@ -37,7 +36,7 @@ const Testimonial = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % length);
-    }, 5000);
+    }, 7000);
 
     return () => clearInterval(interval);
   }, [length]);
