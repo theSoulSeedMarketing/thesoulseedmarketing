@@ -7,12 +7,12 @@ import Founder from "./Components/Founder";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Blogs from "./Components/Blogs";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 // Main App component
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <Routes>
           <Route
@@ -32,7 +32,7 @@ function App() {
           <Route path="/blogs" element={<Blogs />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
