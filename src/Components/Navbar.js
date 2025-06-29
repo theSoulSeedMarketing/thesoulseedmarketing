@@ -22,12 +22,13 @@ import PortraitIcon from '@mui/icons-material/Portrait';
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
-  { text: "Home", icon: <HomeIcon />, href: "#home" },
-  { text: "About", icon: <InfoIcon />, href: "#about" },
-  { text: "Testimonials", icon: <CommentRoundedIcon />, href: "#testimonials" },
-  { text: "Contact", icon: <PhoneRoundedIcon />, href: "#contact" },
-  { text: "Founder", icon: <PortraitIcon />, href: "#founder" }
-];
+    { text: "Home", icon: <HomeIcon />, href: "#home" },
+    { text: "About", icon: <InfoIcon />, href: "#about" },
+    { text: "Testimonials", icon: <CommentRoundedIcon />, href: "#testimonials" },
+    // { text: "Blogs", icon: <CommentRoundedIcon />, href: "/blogs" },
+    { text: "Contact", icon: <PhoneRoundedIcon />, href: "#contact" },
+    { text: "Founder", icon: <PortraitIcon />, href: "#founder" }
+  ];
   return (
     <nav>
       <div className="nav-logo-container">
@@ -37,12 +38,13 @@ const Navbar = () => {
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#testimonials">Testimonials</a>
+        {/* <a href="/blogs">Blogs</a> */}
         <a href="#founder">Founder</a>
         <a href="#contact">Contact</a>
 
         <a href="#contact">
-  <button className="primary-button">Get Quotes</button>
-</a>
+          <button className="primary-button">Get Quotes</button>
+        </a>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
@@ -54,16 +56,16 @@ const Navbar = () => {
           onClick={() => setOpenMenu(false)}
           onKeyDown={() => setOpenMenu(false)}
         >
-<List>
-  {menuOptions.map((item) => (
-    <ListItem key={item.text} disablePadding>
-      <ListItemButton component="a" href={item.href}>
-        <ListItemIcon>{item.icon}</ListItemIcon>
-        <ListItemText primary={item.text} />
-      </ListItemButton>
-    </ListItem>
-  ))}
-</List>
+          <List>
+            {menuOptions.map((item) => (
+              <ListItem key={item.text} disablePadding>
+                <ListItemButton component="a" href={item.href}>
+                  <ListItemIcon>{item.icon}</ListItemIcon>
+                  <ListItemText primary={item.text} />
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
           <Divider />
         </Box>
       </Drawer>
