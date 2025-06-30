@@ -23,23 +23,26 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-section-two">
-        {/* <div className="footer-section-columns">
-          <span>Qualtiy</span>
+        <div className="footer-section-columns">
+          {/* <span>Qualtiy</span>
           <span>Help</span>
           <span>Share</span>
           <span>Carrers</span>
           <span>Testimonials</span>
-          <span>Work</span>
-        </div> */}
+          <span>Work</span> */}
+         <span>Terms & Conditions</span>
+          
+          <span>Privacy Policy</span>
+          
+        </div>
         <div className="footer-section-columns">
           {/* <span>123-323-323</span> */}
-          <span><FiMail /> akshatsoni1047@gmail.com </span>
+
+ 
+                    <span><FiMail /> akshatsoni1047@gmail.com </span>
           <span><BsInstagram /> soulseed.in</span>
          
           <span><SiLinkedin /> soulseed</span>
-          <span>Terms & Conditions</span>
-          
-          <span>Privacy Policy</span>
           {/* <span>contact@food.com</span> */}
         </div>
         {/* <div className="footer-section-columns">
