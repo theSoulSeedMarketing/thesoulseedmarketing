@@ -66,6 +66,16 @@ nav {
   font-size: 1.1rem;
   font-weight: 600;
 }
+.navbar-links-container button {
+  margin-right: 3rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 .primary-button {
   padding: 0.9rem 1.75rem;
   background-color: white;

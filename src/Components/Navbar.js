@@ -16,35 +16,40 @@ import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
-
 import PortraitIcon from '@mui/icons-material/Portrait';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
-    { text: "Home", icon: <HomeIcon />, href: "#home" },
-    { text: "About", icon: <InfoIcon />, href: "#about" },
-    { text: "Testimonials", icon: <CommentRoundedIcon />, href: "#testimonials" },
-    // { text: "Blogs", icon: <CommentRoundedIcon />, href: "/blogs" },
-    { text: "Contact", icon: <PhoneRoundedIcon />, href: "#contact" },
-    { text: "Founder", icon: <PortraitIcon />, href: "#founder" }
+    { text: "Home", icon: <HomeIcon />, href: "home", type: "anchor" },
+    { text: "About", icon: <InfoIcon />, href: "about", type: "anchor" },
+    { text: "Testimonials", icon: <CommentRoundedIcon />, href: "testimonials", type: "anchor" },
+    { text: "Blogs", icon: <CommentRoundedIcon />, href: "/blogs", type: "link" },
+    { text: "Founder", icon: <PortraitIcon />, href: "founder", type: "anchor" },
+    { text: "Contact", icon: <PhoneRoundedIcon />, href: "contact", type: "anchor" }
   ];
+
+  const handleScroll = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav>
       <div className="nav-logo-container">
         <img src={Logo} alt="" />
       </div>
       <div className="navbar-links-container">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#testimonials">Testimonials</a>
-        {/* <a href="/blogs">Blogs</a> */}
-        <a href="#founder">Founder</a>
-        <a href="#contact">Contact</a>
-
-        <a href="#contact">
-          <button className="primary-button">Get Quotes</button>
-        </a>
+        <button className="nav-btn-link" onClick={() => handleScroll("home")}>Home</button>
+        <button className="nav-btn-link" onClick={() => handleScroll("about")}>About</button>
+        <button className="nav-btn-link" onClick={() => handleScroll("testimonials")}>Testimonials</button>
+        <Link to="/blogs">Blogs</Link>
+        <button className="nav-btn-link" onClick={() => handleScroll("founder")}>Founder</button>
+        <button className="nav-btn-link" onClick={() => handleScroll("contact")}>Contact</button>
+        <button className="primary-button" onClick={() => handleScroll("contact")}>Get Quotes</button>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
@@ -59,10 +64,17 @@ const Navbar = () => {
           <List>
             {menuOptions.map((item) => (
               <ListItem key={item.text} disablePadding>
-                <ListItemButton component="a" href={item.href}>
-                  <ListItemIcon>{item.icon}</ListItemIcon>
-                  <ListItemText primary={item.text} />
-                </ListItemButton>
+                {item.type === "link" ? (
+                  <ListItemButton component={Link} to={item.href} >
+                    <ListItemIcon>{item.icon}</ListItemIcon>
+                    <ListItemText primary={item.text} />
+                  </ListItemButton>
+                ) : (
+                  <ListItemButton component="button" onClick={() => handleScroll(item.href)} >
+                    <ListItemIcon>{item.icon}</ListItemIcon>
+                    <ListItemText primary={item.text} />
+                  </ListItemButton>
+                )}
               </ListItem>
             ))}
           </List>
