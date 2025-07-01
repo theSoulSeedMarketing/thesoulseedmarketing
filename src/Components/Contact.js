@@ -24,7 +24,7 @@ const Contact = () => {
         
       >
         {/* Required Hidden Input for Web3Forms */}
-        <input type="hidden" name="access_key" value="1967ee7b-7de8-423d-ae30-ed63cda11cf7" />
+        <input type="hidden" name="access_key" value="9c379ac8-2071-4d19-ba60-7a95a310b13a" />
         
         
         <input

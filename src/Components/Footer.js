@@ -39,7 +39,7 @@ const Footer = () => {
           {/* <span>123-323-323</span> */}
 
  
-                    <span><FiMail /> akshatsoni1047@gmail.com </span>
+                    <span><FiMail /> thesoulseedmarketing@gmail.com </span>
           <span><BsInstagram /> soulseed.in</span>
          
           <span><SiLinkedin /> soulseed</span>
