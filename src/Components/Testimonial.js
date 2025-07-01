@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { AiFillStar } from "react-icons/ai";
 import testimonial1 from "../Assets/testimonial1.jpeg";
-import testimonial2 from "../Assets/testimonial2.jpeg";
+import testimonial2 from "../Assets/chotumaharj_testimonial.jpeg";
 import testimonial3 from "../Assets/john-doe-image.png";
 
 const testimonialsData = [
@@ -10,29 +10,33 @@ const testimonialsData = [
     feedback:
       "The start has been really impressive — there’s both consistency and quality in the content. The reach has also been great. We feel the graphics could be made even stronger in terms of orientation and aesthetics, but overall, it’s been a fantastic experience so far!",
     image: testimonial1,
+    stars: 5,
+  },
+  {
+    name: "Chotu Maharaj",
+    feedback: "The start has been impressive, with consistent and high-quality presentations. Audience engagement has been strong, and the overall experience at the dome theatre has been excellent so far.",
+    image: testimonial2,
+    stars: 4,
   },
   {
     name: "Pyra Vanasthali",
     feedback: "The start has been really impressive — there’s both consistency and quality in the content. The reach has also been great. We feel the graphics could be made even stronger in terms of orientation and aesthetics, but overall, it’s been a fantastic experience so far!",
     image: testimonial1,
+    stars: 5,
   },
   {
-    name: "Pyra Vanasthali",
-    feedback: "The start has been really impressive — there’s both consistency and quality in the content. The reach has also been great. We feel the graphics could be made even stronger in terms of orientation and aesthetics, but overall, it’s been a fantastic experience so far!",
-    image: testimonial1,
+    name: "Chotu Maharaj",
+    feedback: "The start has been impressive, with consistent and high-quality presentations. Audience engagement has been strong, and the overall experience at the dome theatre has been excellent so far.",
+    image: testimonial2,
+    stars: 4
   },
-    {
-    name: "Pyra Vanasthali",
-    feedback: "The start has been really impressive — there’s both consistency and quality in the content. The reach has also been great. We feel the graphics could be made even stronger in terms of orientation and aesthetics, but overall, it’s been a fantastic experience so far!",
-    image: testimonial1,
-  }
 ];
 
 const Testimonial = () => {
   const [current, setCurrent] = useState(0);
   const length = testimonialsData.length;
 
-  // ⏱️ Auto-play carousel every 5 seconds
+  // ⏱️ Auto-play carousel every 7 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % length);
@@ -52,7 +56,6 @@ const Testimonial = () => {
   return (
     <div id="testimonials" className="work-section-wrapper">
       <div className="work-section-top">
-        {/* <p className="primary-subheading">Testimonial</p> */}
         <h1 className="primary-heading">What They Are Saying</h1>
         <p className="primary-text">
           Hear what our customers have to say about us.
@@ -72,7 +75,7 @@ const Testimonial = () => {
           />
           <p>{testimonialsData[current].feedback}</p>
           <div className="testimonials-stars-container">
-            {[...Array(5)].map((_, i) => (
+            {[...Array(testimonialsData[current].stars)].map((_, i) => (
               <AiFillStar key={i} />
             ))}
           </div>

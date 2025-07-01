@@ -71,7 +71,7 @@ const WhyChooseSoulSeedMarketing = () => (
     <p>
       Tight deadlines? Ambitious growth targets? Need a viral reel yesterday? Bring it on. Our team thrives on challenges, and some of our best work happens under pressure. If you’re ready to break molds and set new standards, we’re right there with you.
     </p>
-    <h2>We’ve Got the Heart</h2>
+    <h2>We’ve Got the Heart ❤️</h2>
     <p>
       Marketing can often feel cold and transactional. At SoulSeed, we bring the heart. Our founder, Akshat Soni, started SoulSeed Marketing because he saw a gap: brands needed marketing that wasn’t just smart but soulful. Since then, our agency has grown into a passionate team of creatives, strategists, and storytellers committed to doing work that matters.
     </p>
