@@ -1,12 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import blog1 from "../Assets/blog1.png";
 const blogs = [
   {
     name: "why-choose-soulseed-marketing",
     title: "Why Choose The SoulSeed Marketing: Where Creativity Meets Consciousness 🌱",
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
-    summary: "Unlock the secrets to organic Instagram growth in 2025 with our expert tips and strategies!"
+    image: blog1,
+    summary: "Discover how Soulseed Marketing turns bold ideas into brands that thrive."
   },
 
 ];
@@ -22,12 +22,12 @@ const Blogs = () => {
       <div className="blogs-main-container">
       <h1 className="primary-heading" style={{textAlign: 'center', marginBottom: '2rem'}}>Our Latest Blog</h1>
       <div className="latest-blog-card" onClick={() => navigate(`/blog/${latest.name}`)} style={{cursor: 'pointer'}}>
-        <img src={latest.image} alt={latest.title} className="latest-blog-img" />
         <div className="latest-blog-content">
           <h2>{latest.title}</h2>
           <p>{latest.summary}</p>
           {/* <button className="secondary-button">Read Blog</button> */}
         </div>
+        <img src={latest.image} alt={latest.title} className="latest-blog-img" />
       </div>
       <h2 className="primary-subheading" style={{marginTop: '3rem', marginBottom: '1rem'}}>Our Older Blogs</h2>
       <div className="recent-blogs-list">
