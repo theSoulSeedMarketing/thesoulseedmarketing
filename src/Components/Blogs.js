@@ -3,23 +3,12 @@ import { useNavigate } from "react-router-dom";
 
 const blogs = [
   {
-    name: "how-to-grow-on-instagram",
-    title: "How to Grow on Instagram",
+    name: "why-choose-soulseed-marketing",
+    title: "Why Choose The SoulSeed Marketing: Where Creativity Meets Consciousness 🌱",
     image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
     summary: "Unlock the secrets to organic Instagram growth in 2025 with our expert tips and strategies!"
   },
-  {
-    name: "branding-tips-for-2025",
-    title: "Branding Tips for 2025",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
-    summary: "Stay ahead of the curve with these essential branding tips for the coming year."
-  },
-  {
-    name: "content-marketing-secrets",
-    title: "Content Marketing Secrets",
-    image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80",
-    summary: "Discover the best-kept secrets of high-performing content marketing campaigns."
-  }
+
 ];
 
 const Blogs = () => {

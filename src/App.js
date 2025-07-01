@@ -9,6 +9,8 @@ import Footer from "./Components/Footer";
 import Blogs from "./Components/Blogs";
 import { HashRouter, Routes, Route } from "react-router-dom";
 
+//Blog imports
+import WhyChooseSoulSeedMarketing from "./Components/Blogs/why-choose-soulseed-marketing";
 // Main App component
 function App() {
   return (
@@ -30,6 +32,7 @@ function App() {
             }
           />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blog/why-choose-soulseed-marketing" element={<WhyChooseSoulSeedMarketing />} />
         </Routes>
       </div>
     </HashRouter>
